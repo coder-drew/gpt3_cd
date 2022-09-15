@@ -11,4 +11,8 @@
   --color-blog: #042c54;
   --color-text: #81AFDD;
   --color-subtext: #FF8A71;
+
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
 }
