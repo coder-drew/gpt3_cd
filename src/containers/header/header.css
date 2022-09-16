@@ -1,0 +1,35 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.hero__body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.hero__body-text {
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__body-text h1,
+p {
+    margin-bottom: 30px;
+}
+
+/* .hero__body-text p {
+    max-width: 98%;
+} */
+
+.hero__body img {
+    width: 50%;
+}

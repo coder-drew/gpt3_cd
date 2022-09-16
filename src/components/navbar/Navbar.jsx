@@ -6,19 +6,19 @@ import "./navbar.css";
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <a href="#products">Products</a>
     </p>
     <p>
-      <a href="#wgpt3">What is GPT3</a>
+      <a href="#solutions">Solutions</a>
     </p>
     <p>
-      <a href="#possibility">Open AI</a>
+      <a href="#resources">Resources</a>
     </p>
     <p>
-      <a href="#featers">Case Studies</a>
+      <a href="#news">News</a>
     </p>
     <p>
-      <a href="#blog">Library</a>
+      <a href="#pricing">Pricing</a>
     </p>
   </>
 );
