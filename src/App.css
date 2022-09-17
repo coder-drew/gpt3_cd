@@ -28,17 +28,21 @@ p {
 }
 
 button {
-  padding: 0.5rem 1.8rem;
+  padding: 0.5rem 1rem;
   color: white;
   background: #0649F8;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: var(--font-md);
-  line-height: 25px;
-  border-radius: 5px;
+  font-size: var(--font-sm);
+  line-height: 1.5rem;
+  border-radius: 10px;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+button:hover {
+  background: #0645EA;
 }
 
 .gradient__bg {
@@ -106,6 +110,36 @@ button {
     transform: scale(1);
   }
 }
+
+.rotate-180-cw {
+  -webkit-animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-180-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-180-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   .section__padding {

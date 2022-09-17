@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 2rem 3rem;
 }
 
 .gpt3__navbar-links {
@@ -14,11 +14,11 @@
 }
 
 .gpt3__navbar-links_logo {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .gpt3__navbar-links_logo img {
-    width: 140px;
+    width: 120px;
 }
 
 .gpt3__navbar-links_container {
@@ -35,16 +35,52 @@
 .gpt3__navbar-links_container p,
 .gpt3__navbar-sign p,
 .gpt3__navbar-menu_container p {
-    color: black;
+    color: #1b1f24;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     line-height: 25px;
     text-transform: capitalize;
-
-    margin: 0 1rem;
+    border-radius: 10px;
     cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.gpt3__navbar-links_container p {
+    padding: 0.5rem 0.4rem 0.5rem 0.8rem;
+    margin: 0rem;
+}
+
+.gpt3__navbar-links_container p:last-child {
+    padding: 0.5rem 1rem;
+    margin: 0rem;
+}
+
+.gpt3__navbar-sign p {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin: 0rem 0.5rem;
+}
+
+.gpt3__navbar-links_container p:hover,
+.gpt3__navbar-sign p:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.arrow {
+    font-size: 24px;
+    color:#444d56;
+    
+}
+
+.gpt3__navbar-links_container p:hover .arrow {
+    color: var(--color-primary);
+}
+
+
 
 /* .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {

@@ -1,23 +1,31 @@
 import React, { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { RiMenu3Line, RiCloseLine, RiArrowDropDownLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 
 const Menu = () => (
   <>
-    <p>
+    <p className="navbar__menu-item">
       <a href="#products">Products</a>
+      <RiArrowDropDownLine className="arrow" />
     </p>
-    <p>
+    <p className="navbar__menu-item">
       <a href="#solutions">Solutions</a>
+      <RiArrowDropDownLine className="arrow" />
     </p>
-    <p>
+    <p className="navbar__menu-item">
       <a href="#resources">Resources</a>
+      <RiArrowDropDownLine className="arrow" />
     </p>
-    <p>
-      <a href="#news">News</a>
+    <p className="navbar__menu-item">
+      <a href="#company">Company</a>
+      <RiArrowDropDownLine className="arrow" />
     </p>
-    <p>
+    <p className="navbar__menu-item">
+      <a href="#blog">Blog</a>
+      <RiArrowDropDownLine className="arrow" />
+    </p>
+    <p className="navbar__menu-item">
       <a href="#pricing">Pricing</a>
     </p>
   </>
@@ -33,7 +41,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="gpt3__navbar-links_container">
-          <Menu />
+          <Menu/>
         </div>
       </div>
       <div className="gpt3__navbar-sign">

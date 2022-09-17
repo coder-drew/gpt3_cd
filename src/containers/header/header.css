@@ -1,9 +1,9 @@
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 8rem 6rem;
     font-family: var(--font-family);
     font-weight: 700;
 }
@@ -15,21 +15,31 @@
 }
 
 .hero__body-text {
-    padding: 0rem 3rem;
+    padding: 0rem 0rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .hero__body-text h1,
 p {
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero__body-text h1 {
+    font-size: 72px;
+    color: #1b1f24;
+}
+
+.hero__body-text p {
+    font-size: 20px;
 }
 
 /* .hero__body-text p {
     max-width: 98%;
 } */
 
-.hero__body img {
+/* .hero__body img {
     width: 50%;
-}
+} */
