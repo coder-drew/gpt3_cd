@@ -33,6 +33,15 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  // const [isNotHovering, setIsNotHovering] = useState(false);
+
+  // const handleMouseLeave = () => {
+  //   setIsNotHovering(true);
+  // };
+
+  // const handleMouseEnter = () => {
+  //   setIsNotHovering(false);
+  // };
 
   return (
     <div className="gpt3__navbar">
@@ -41,7 +50,69 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="gpt3__navbar-links_container">
-          <Menu/>
+          <Menu />
+          {/* <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#products">Products</a>
+            <RiArrowDropDownLine
+              className={isNotHovering ? "arrow-var": ""}
+              id="arrow"
+            />
+          </p>
+          <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#solutions">Solutions</a>
+            <RiArrowDropDownLine
+              className={isNotHovering ? "arrow-var" : ""}
+              id="arrow"
+            />
+          </p>
+          <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#resources">Resources</a>
+            <RiArrowDropDownLine
+              // className={isHovering ? "rotate-180-cw" : "rotate-0-cw"}
+              id="arrow"
+            />
+          </p>
+          <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#company">Company</a>
+            <RiArrowDropDownLine
+              className={isNotHovering ? "rotate-180-cw" : "rotate-0-cw"}
+              id="arrow"
+            />
+          </p>
+          <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#blog">Blog</a>
+            <RiArrowDropDownLine
+              className={isNotHovering ? "rotate-180-cw" : "rotate-0-cw"}
+              id="arrow"
+            />
+          </p>
+          <p
+            className="navbar__menu-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a href="#pricing">Pricing</a>
+          </p> */}
         </div>
       </div>
       <div className="gpt3__navbar-sign">
